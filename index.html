@@ -30,11 +30,15 @@
     integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n"
     crossorigin="anonymous"></script>
 
+  
+
   <link rel="stylesheet" href="./static/css/showMeTheMoney.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <script src="./static/js/imgShow.js"></script>
 
   <script>
     $(function () {
@@ -437,6 +441,13 @@
           </div>
           <div class="col-md-9 col-12">
             <h4>실전! Querydsl 강의 수료</h4>
+            <div> 수료증
+              <button type="button" onclick="$('#querydsl').show()">열기</button>
+              <button type="button" onclick="querydsl()">닫기</button>
+              <div class="text-center">
+                <img id="querydsl" class="img-thumbnail" src="./static/img/querydsl.jpg" style="display: none;">
+              </div>
+            </div>
           </div>
         </div>
         <hr />
@@ -446,6 +457,13 @@
           </div>
           <div class="col-md-9 col-12">
             <h4>실전! 스프링 데이터 JPA 강의 수료</h4>
+            <div> 수료증
+              <button type="button" onclick="$('#JPA').show()">열기</button>
+              <button type="button" onclick="JPA()">닫기</button>
+              <div class="text-center">
+                <img id="JPA" class="img-thumbnail" src="./static/img/JPA.jpg" style="display: none;">
+              </div>
+            </div>
           </div>
         </div>
         <hr />
@@ -455,6 +473,13 @@
           </div>
           <div class="col-md-9 col-12">
             <h4>자바 ORM 표준 JPA 프로그래밍 - 기본편 강의 수료</h4>
+            <div> 수료증
+              <button type="button" onclick="$('#jpa_basic').show()">열기</button>
+              <button type="button" onclick="jpa_basic()">닫기</button>
+              <div class="text-center">
+                <img id="jpa_basic" class="img-thumbnail" src="./static/img/jpa_basic.jpg" style="display: none;">
+              </div>
+            </div>
           </div>
         </div>
         <hr />
@@ -464,6 +489,13 @@
           </div>
           <div class="col-md-9 col-12">
             <h4>실전! 스프링 부트와 JPA 활용2 - API 개발과 성능 최적화 강의 수료</h4>
+            <div> 수료증
+              <button type="button" onclick="$('#jpa_application2').show()">열기</button>
+              <button type="button" onclick="jpa_application2()">닫기</button>
+              <div class="text-center">
+                <img id="jpa_application2" class="img-thumbnail" src="./static/img/jpa_application2.jpg" style="display: none;">
+              </div>
+            </div>
           </div>
         </div>
         <hr />
@@ -473,6 +505,13 @@
           </div>
           <div class="col-md-9 col-12">
             <h4>실전! 스프링 부트와 JPA 활용1 - 웹애플리케이션 개발 강의 수료</h4>
+            <div> 수료증
+              <button type="button" onclick="$('#jpa_application').show()">열기</button>
+              <button type="button" onclick="jpa_application()">닫기</button>
+              <div class="text-center">
+                <img id="jpa_application" class="img-thumbnail" src="./static/img/jpa_application.jpg" style="display: none;">
+              </div>
+            </div>
           </div>
         </div>
         <hr />
@@ -503,6 +542,13 @@
           <div class="col-md-9 col-12">
             <h4>소프트웨어 마에스트로 경진대회 장려상</h4>
             <i class="gray">교내 알고리즘 경진대회 수상</i>
+            <div> 상장
+              <button type="button" onclick="$('#Maestro').show()">열기</button>
+              <button type="button" onclick="Maestro()">닫기</button>
+              <div class="text-center">
+                <img id="Maestro" class="img-thumbnail" src="./static/img/Maestro.jpg" style="display: none;">
+              </div>
+            </div>
           </div>
         </div>
         <hr />
@@ -513,16 +559,31 @@
           <div class="col-md-9 col-12">
             <h4>고급프로그래밍 경진대회 최우수상</h4>
             <i class="gray">교내 알고리즘 경진대회 수상</i>
+            <div> 상장
+              <button type="button" onclick="$('#high_class').show()">열기</button>
+              <button type="button" onclick="high_class()">닫기</button>
+              <div class="text-center">
+                <img id="high_class" class="img-thumbnail" src="./static/img/high_class.JPG" style="display: none;">
+              </div>
+            </div>
           </div>
         </div>
         <hr />
         <div class="row">
           <div class="col-md-3 col-12 text-md-right">
             <h4 class="gray">2017. 08. 07 ~ 08. 11</h4>
+
           </div>
           <div class="col-md-9 col-12">
             <h4>삼성 멀티캠퍼스 집합 Spring 교육 수료</h4>
             <i class="gray">Java Framework - Spring, iBatis, MyBatis 연동</i>
+            <div> 수료증
+              <button type="button" onclick="$('#MultiCampus').show()">열기</button>
+              <button type="button" onclick="MultiCampus()">닫기</button>
+              <div class="text-center">
+                <img id="MultiCampus" class="img-thumbnail" src="./static/img/MultiCampus.jpg" style="display: none;">
+              </div>
+            </div>
           </div>
         </div>
         <hr />
@@ -546,7 +607,7 @@
       <div class="footer text-center">
         <small>CSS by <a href="https://getbootstrap.com/" target="_blank">Bootstrap 4</a>. Thanks for <a
             href="https://blog.outsider.ne.kr/1234" target="_blank">Outsider</a></small><br />
-        <small>Last Modified at 2020.09.18, <a href="https://github.com/9bini/portfolio/commits/master"
+        <small>Last Modified at 2020.09.23, <a href="https://github.com/9bini/portfolio/commits/master"
             target="_blank">Update Note. </a><a href="https://github.com/9bini/portfolio" target="_blank"><i
               class="fa fa-github"></i> Github</a></small>
       </div>
